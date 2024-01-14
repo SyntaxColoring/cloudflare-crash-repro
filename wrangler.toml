@@ -44,6 +44,14 @@ compatibility_date = "2023-12-18"
 # name = "MY_DURABLE_OBJECT"
 # class_name = "MyDurableObject"
 
+[[durable_objects.bindings]]
+name = "EXAMPLE_CLASS"
+class_name = "DurableObjectExample"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["DurableObjectExample"]
+
 # Durable Object migrations.
 # Docs: https://developers.cloudflare.com/workers/learning/using-durable-objects#configure-durable-object-classes-with-migrations
 # [[migrations]]
